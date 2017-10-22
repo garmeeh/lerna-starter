@@ -4,13 +4,13 @@
 This starter kit leverages [Lerna](https://lernajs.io/) and [Storybook](https://storybook.js.org/) to set you up with a simple UI Development environment to develop, test and publish your React npm packages. With this starter kit you
 have everything you need to develop React UI Components and build your own library.
 
-It could easily be adapted also to be used with Vue & react Native.
+It can also easily be adapted for Vue & React Native.
 
-All commands in this project use `yarn` but feel free to use `npm` if you prefer.
+All commands in this project use `yarn` but feel free to use `npm` if you would prefer.
 
 ## Getting Started
 1. Clone the project: `git clone git@github.com:kicktail/lerna-starter.git`
-2. Update the `package.json` with your details.
+2. Update the `package.json` with your details
 3. Setup project: `yarn install`
 4. Run `yarn start`
 

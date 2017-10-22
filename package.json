@@ -14,8 +14,6 @@
     "export-static-storybook": "build-storybook -c .storybook -o .out",
     "publish": "lerna publish",
     "prepublish": "yarn build",
-    "publish-simple": "lerna publish --skip-git --skip-npm",
-    "prepublish-simple": "yarn build",
     "precommit": "yarn test",
     "postinstall": "yarn bootstrap"
   },
