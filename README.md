@@ -1,10 +1,11 @@
 # Lerna Starter Kit
 [![styled with prettier](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
 
-This starter kit leverages [Lerna](https://lernajs.io/) and [Storybook](https://storybook.js.org/) to set you up with a simple UI Development environment to develop, test and publish your React npm packages. With this starter kit you
-have everything you need to develop React UI Components and build your own library.
+This starter kit leverages [Lerna](https://lernajs.io/) and [Storybook](https://storybook.js.org/) to set you up with a simple UI Development environment to develop, test and publish your npm packages.
 
-It can also easily be adapted for Vue & React Native.
+The main focus of the starter kit is to enable you to have multiple React components published as separate packages under a single repo (we get this ability from [Lerna](https://lernajs.io/) and the ability to run them all in one place which we get from [Storybook](https://storybook.js.org/). By running them all in one place we can rapidly develop new React components, test them and deploy all from the same cmd line!
+
+It could probably be adapted for Vue & React Native components also.
 
 All commands in this project use `yarn` but feel free to use `npm` if you would prefer.
 
