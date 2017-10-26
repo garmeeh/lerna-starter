@@ -93,7 +93,7 @@ package-name/
 ## Contributing
 The main purpose of this repository is to continue to evolve Lerna starter kit.
 Lerna starter kit is to enable you to have multiple React components published as separate packages under a single repo.
-Contribute guide
+Please feel free to contribute.
 
 ## Author
 
