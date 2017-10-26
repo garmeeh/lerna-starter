@@ -90,6 +90,13 @@ package-name/
 
 4. Write Tests and Publish!
 
+
+## Author
+
+Gary Meehan 
+https://github.com/garmeeh
+
+
 ****
 
 ## Change Log
