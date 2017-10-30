@@ -93,12 +93,11 @@ package-name/
 
 ## Contributing
 The main purpose of this repository is to continue to evolve Lerna starter kit.
-Lerna starter kit is to enable you to have multiple React components published as separate packages under a single repo.
-Please feel free to contribute.
+Lerna starter kit is to enable you to have multiple React components published as separate packages under a single repo. Have a look at our [Contributing Guide](/CONTRIBUTING.md)
 
 ## Author
 
-Gary Meehan 
+Gary Meehan
 https://github.com/garmeeh
 
 
@@ -109,6 +108,10 @@ https://github.com/garmeeh
 **v0.0.1**
 
 Initial Commit
+
+**v0.0.2**
+
+Add [Contributing Guide](/CONTRIBUTING.md)
 
 
 
