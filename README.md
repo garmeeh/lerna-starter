@@ -1,4 +1,5 @@
 # Lerna Starter Kit
+[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors)
 [![styled with prettier](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
 
 This starter kit leverages [Lerna](https://lernajs.io/) and [Storybook](https://storybook.js.org/) to set you up with a simple UI Development environment to develop, test and publish your npm packages.
@@ -92,12 +93,11 @@ package-name/
 
 ## Contributing
 The main purpose of this repository is to continue to evolve Lerna starter kit.
-Lerna starter kit is to enable you to have multiple React components published as separate packages under a single repo.
-Please feel free to contribute.
+Lerna starter kit is to enable you to have multiple React components published as separate packages under a single repo. Have a look at our [Contributing Guide](/CONTRIBUTING.md)
 
 ## Author
 
-Gary Meehan 
+Gary Meehan
 https://github.com/garmeeh
 
 
@@ -109,4 +109,19 @@ https://github.com/garmeeh
 
 Initial Commit
 
+**v0.0.2**
 
+Add [Contributing Guide](/CONTRIBUTING.md)
+
+
+
+## Contributors
+
+Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds/all-contributors#emoji-key)):
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+| [<img src="https://avatars1.githubusercontent.com/u/13333582?v=4" width="100px;"/><br /><sub>Gary Meehan</sub>](https://github.com/garmeeh)<br />[💻](https://github.com/kicktail/lerna-starter/commits?author=garmeeh "Code") [📖](https://github.com/kicktail/lerna-starter/commits?author=garmeeh "Documentation") [💡](#example-garmeeh "Examples") [🤔](#ideas-garmeeh "Ideas, Planning, & Feedback") [🚇](#infra-garmeeh "Infrastructure (Hosting, Build-Tools, etc)") [👀](#review-garmeeh "Reviewed Pull Requests") [⚠️](https://github.com/kicktail/lerna-starter/commits?author=garmeeh "Tests") |
+| :---: |
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+This project follows the [all-contributors](https://github.com/kentcdodds/all-contributors) specification. Contributions of any kind welcome!
