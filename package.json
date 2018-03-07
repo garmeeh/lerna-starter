@@ -2,15 +2,13 @@
   "name": "lerna-starter",
   "version": "0.0.2",
   "private": true,
-  "description":
-    "Simple UI Development environment to develop, test and publish your React npm packages",
+  "description": "Simple UI Development environment to develop, test and publish your React npm packages",
   "main": "build/index.js",
   "scripts": {
     "start": "yarn bootstrap && NODE_ENV=development start-storybook -p 9001",
     "test": "jest --coverage --verbose",
     "bootstrap": "lerna bootstrap",
-    "build":
-      "lerna exec --parallel -- babel src -d dist --ignore spec.js,story.js",
+    "build": "lerna exec --parallel -- babel src -d dist --ignore spec.js,story.js",
     "export-static-storybook": "build-storybook -c .storybook -o .out",
     "publish": "lerna publish",
     "prepublish": "yarn build",
@@ -30,33 +28,40 @@
   },
   "homepage": "https://github.com/kicktail/lerna-starter/#readme",
   "devDependencies": {
-    "@storybook/addon-actions": "^3.2.12",
-    "@storybook/addon-links": "^3.2.12",
-    "@storybook/react": "^3.2.12",
-    "all-contributors-cli": "^4.5.1",
+    "@storybook/addon-actions": "^3.3.15",
+    "@storybook/addon-links": "^3.3.15",
+    "@storybook/react": "^3.3.15",
+    "all-contributors-cli": "^4.11.0",
     "babel-cli": "^6.26.0",
-    "babel-jest": "^21.2.0",
+    "babel-jest": "^22.4.1",
     "babel-plugin-transform-es2015-modules-commonjs": "^6.26.0",
-    "babel-preset-env": "^1.6.0",
+    "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
-    "enzyme": "^3.1.0",
-    "enzyme-adapter-react-16": "^1.0.1",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
     "glob-loader": "^0.3.0",
-    "jest": "^21.2.1",
-    "lerna": "^2.4.0",
-    "lint-staged": "^4.3.0",
-    "prettier": "^1.7.4",
-    "react": "^16.0.0",
-    "react-dom": "^16.0.0",
-    "react-test-renderer": "^16.0.0",
-    "styled-components": "^2.2.1"
+    "jest": "^22.4.2",
+    "lerna": "^2.9.0",
+    "lint-staged": "^7.0.0",
+    "prettier": "^1.11.1",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-test-renderer": "^16.2.0",
+    "styled-components": "^3.2.1"
   },
   "lint-staged": {
-    "*.{js,json,css}": ["prettier --write", "git add"]
+    "*.{js,json,css}": [
+      "prettier --write",
+      "git add"
+    ]
   },
   "jest": {
     "resetModules": true,
-    "testMatch": ["**/?(*.)(spec).js?(x)"],
-    "testPathIgnorePatterns": ["<rootDir>node_modules/"]
+    "testMatch": [
+      "**/?(*.)(spec).js?(x)"
+    ],
+    "testPathIgnorePatterns": [
+      "<rootDir>node_modules/"
+    ]
   }
 }

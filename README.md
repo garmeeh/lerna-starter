@@ -11,7 +11,7 @@ It could probably be adapted for Vue & React Native components also.
 All commands in this project use `yarn` but feel free to use `npm` if you would prefer.
 
 ## Getting Started
-1. Clone the project: `git clone git@github.com:kicktail/lerna-starter.git`
+1. Clone the project: `git clone git@github.com:garmeeh/lerna-starter.git`
 2. Update the `package.json` with your details
 3. Setup project: `yarn install`
 4. Run `yarn start`
@@ -120,7 +120,7 @@ Add [Contributing Guide](/CONTRIBUTING.md)
 Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds/all-contributors#emoji-key)):
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-| [<img src="https://avatars1.githubusercontent.com/u/13333582?v=4" width="100px;"/><br /><sub>Gary Meehan</sub>](https://github.com/garmeeh)<br />[💻](https://github.com/kicktail/lerna-starter/commits?author=garmeeh "Code") [📖](https://github.com/kicktail/lerna-starter/commits?author=garmeeh "Documentation") [💡](#example-garmeeh "Examples") [🤔](#ideas-garmeeh "Ideas, Planning, & Feedback") [🚇](#infra-garmeeh "Infrastructure (Hosting, Build-Tools, etc)") [👀](#review-garmeeh "Reviewed Pull Requests") [⚠️](https://github.com/kicktail/lerna-starter/commits?author=garmeeh "Tests") |
+| [<img src="https://avatars1.githubusercontent.com/u/13333582?v=4" width="100px;"/><br /><sub>Gary Meehan</sub>](https://github.com/garmeeh)<br />[💻](https://github.com/garmeeh/lerna-starter/commits?author=garmeeh "Code") [📖](https://github.com/garmeeh/lerna-starter/commits?author=garmeeh "Documentation") [💡](#example-garmeeh "Examples") [🤔](#ideas-garmeeh "Ideas, Planning, & Feedback") [🚇](#infra-garmeeh "Infrastructure (Hosting, Build-Tools, etc)") [👀](#review-garmeeh "Reviewed Pull Requests") [⚠️](https://github.com/garmeeh/lerna-starter/commits?author=garmeeh "Tests") |
 | :---: |
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
