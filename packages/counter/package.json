@@ -1,0 +1,14 @@
+{
+  "name": "@gmdev/counter",
+  "version": "0.0.3",
+  "description": "Example Counter Component",
+  "main": "dist/index.js",
+  "module": "src/index.js",
+  "author": "Gary Meehan",
+  "peerDependencies": {
+    "react": "^16.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

@@ -1,127 +1,74 @@
-# Lerna Starter Kit
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors)
-[![styled with prettier](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
-
-This starter kit leverages [Lerna](https://lernajs.io/) and [Storybook](https://storybook.js.org/) to set you up with a simple UI Development environment to develop, test and publish your npm packages.
-
-The main focus of the starter kit is to enable you to have multiple React components published as separate packages under a single repo (we get this ability from [Lerna](https://lernajs.io/) and the ability to run them all in one place which we get from [Storybook](https://storybook.js.org/). By running them all in one place we can rapidly develop new React components, test them and deploy all from the same cmd line!
-
-It could probably be adapted for Vue & React Native components also.
-
-All commands in this project use `yarn` but feel free to use `npm` if you would prefer.
+# React Component Library Publishing Starter
 
 ## Getting Started
-1. Clone the project: `git clone git@github.com:garmeeh/lerna-starter.git`
-2. Update the `package.json` with your details
-3. Setup project: `yarn install`
-4. Run `yarn start`
 
-### Demo / Example Package
-Running `yarn start` will spin up Storybook and navigating to http://localhost:9001/ you will be able to see the example package showcased in Storybook. This is only a simple example package included to get you up and running with a demo. If you want to skip this part just delete this package and skip to [Creating a Package](#creating-a-package) or have a look at the [scripts available](#scripts).
+1. Clone the project: `git clone git@github.com:garmeeh/lerna-starter.git`
+2. Setup project: `npm install`
+3. Run `npm run start`
+
+Running `npm run start` will:
+
+1.) Spin up Storybook. You can then navigate to [http://localhost:9001/](http://localhost:9001/) and you will be able to see the example packages showcased in Storybook.
+
+2.) Will run the build script in watch mode. This means any changes made in the packages folder will be built and updated in Storybook.
 
 ## Publishing
 
-**Versioning**
-By default this project mimics lerna and operates on [Fixed/Locked](https://github.com/lerna/lerna#fixedlocked-mode-default) mode.
+To build and publish your packages you just need to run:
 
-If you want to increment package versions independently of each other, open `lerna.json` and update the versions to be `"independent"`, this will run Lerna in [independent mode](https://github.com/lerna/lerna#independent-mode---independent).
-
-## Scripts
-A look at the scripts that are available:
-
-- To [bootstrap](https://github.com/lerna/lerna#bootstrap) your packages and start your UI development environment run:
 ```
-yarn start
+npm run publish-packages
 ```
 
-- To easily install all the dependencies in your individual packages at once run:
+(You will need to be logged into npm)
+
+This will run the build script and then publish your packages. It is currently set to publish each package individually so that their versions are independent.
+
+You can find the full options for publishing [here](https://github.com/lerna/lerna/tree/master/commands/publish#readme) so that you can tailor to your exact needs. But for most cases the current set up will be enough.
+
+## Tests
+
+This project comes with [Jest](https://jestjs.io/) and [React Testing Library](https://github.com/kentcdodds/react-testing-library) set up for you.
+
+To run all tests and generate a coverage report simply run:
+
 ```
-yarn bootstrap
+npm run test
 ```
 
-- Run all your packages tests and generate coverage report:
+While developing you can also run tests in watch mode by running:
+
 ```
-yarn test
+npm run test:watch
 ```
 
-- To export your storybook as a static app:
+## Export Static Storybook
+
+Storybook gives a great developer experience with its dev time features, like instance change updates via Webpack’s HMR.
+
+But Storybook is also a tool you can use to showcase your components to others.
+
+For that, Storybook comes with a tool to export your storybook into a static web app. Then you can deploy it to GitHub pages or any static hosting service.
+
+Simply run:
+
 ```
-yarn export-static-storybook
+npm run export-static-storybook
 ```
 
-- It will be placed in `.out/` To test locally after export:
+This will build the storybook configured in the Storybook directory into a static web app and place it inside the .out directory. Now you can deploy the content in the .out directory wherever you want.
+
+To test it locally, simply run the following commands with Python HTTP Server:
+
 ```
 cd .out
 python -m SimpleHTTPServer
 ```
 
-- Create a new release of the packages that have been updated. Prompts for a new version and updates all the packages on git and npm:
-```
-yarn publish
-```
-
-
-This project is powered by Lerna so all [Lerna commands](https://lernajs.io/) are also available. If you do wish to use these.
-
-## Creating A Package
-
-To get started with your first package:
-
-1. Create a new directory for your package:
-
-A basic package structure will look like:
+or Node HTTP Server:
 
 ```
-package-name/
- ├──src/
- |   ├──index.js                    * Entry point for you package
- |   ├──index.spec.js               * Test file for entry point
- |   └──styles/                     * Styled components directory
- |       └──styledComponent.js
- │
- ├──index.story.js                  * Storybook story for entry point
- ├──.gitignore                      * .gitignore specific to this package
- ├──README.md                       * README specific to this package
- └──package.json                    * Info for this independent package
+npm install http-server -g
+cd .out
+http-server
 ```
-
-2. Run `yarn start` which will bootstrap your package and run Storybook.
-
-3. Start building out your Component/Package and use the Story to view it as you develop.
-
-4. Write Tests and Publish!
-
-## Contributing
-The main purpose of this repository is to continue to evolve Lerna starter kit.
-Lerna starter kit is to enable you to have multiple React components published as separate packages under a single repo. Have a look at our [Contributing Guide](/CONTRIBUTING.md)
-
-## Author
-
-Gary Meehan
-https://github.com/garmeeh
-
-
-****
-
-## Change Log
-
-**v0.0.1**
-
-Initial Commit
-
-**v0.0.2**
-
-Add [Contributing Guide](/CONTRIBUTING.md)
-
-
-
-## Contributors
-
-Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds/all-contributors#emoji-key)):
-
-<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-| [<img src="https://avatars1.githubusercontent.com/u/13333582?v=4" width="100px;"/><br /><sub>Gary Meehan</sub>](https://github.com/garmeeh)<br />[💻](https://github.com/garmeeh/lerna-starter/commits?author=garmeeh "Code") [📖](https://github.com/garmeeh/lerna-starter/commits?author=garmeeh "Documentation") [💡](#example-garmeeh "Examples") [🤔](#ideas-garmeeh "Ideas, Planning, & Feedback") [🚇](#infra-garmeeh "Infrastructure (Hosting, Build-Tools, etc)") [👀](#review-garmeeh "Reviewed Pull Requests") [⚠️](https://github.com/garmeeh/lerna-starter/commits?author=garmeeh "Tests") |
-| :---: |
-<!-- ALL-CONTRIBUTORS-LIST:END -->
-
-This project follows the [all-contributors](https://github.com/kentcdodds/all-contributors) specification. Contributions of any kind welcome!
