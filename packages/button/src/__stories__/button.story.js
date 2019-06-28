@@ -1,17 +1,17 @@
-import React from 'react';
-import { storiesOf } from '@storybook/react';
-import { action } from '@storybook/addon-actions';
+import React from "react"
+import { storiesOf } from "@storybook/react"
+import { action } from "@storybook/addon-actions"
 
-import Button from '../';
+import Button from "../"
 
-const stories = storiesOf('Button', module);
+const stories = storiesOf("Button", module)
 
-stories.add('Standard Button', () => (
+stories.add("Standard Button", () => (
   <Button>
     {({ getProps }) => (
-      <button {...getProps()} onClick={action('button')}>
+      <button {...getProps()} onClick={action("button")}>
         Example Button
       </button>
     )}
   </Button>
-));
+))

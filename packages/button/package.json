@@ -6,7 +6,7 @@
   "module": "src/index.js",
   "author": "Gary Meehan",
   "peerDependencies": {
-    "react": "^16.0.0"
+    "react": "^16.8.6"
   },
   "publishConfig": {
     "access": "public"

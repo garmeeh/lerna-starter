@@ -1,12 +1,12 @@
-import 'jest-dom/extend-expect';
-import React from 'react';
-import { render, cleanup } from 'react-testing-library';
-import Button from '../';
+import "jest-dom/extend-expect"
+import React from "react"
+import { render, cleanup } from "@testing-library/react"
+import Button from "../"
 
-afterEach(cleanup);
+afterEach(cleanup)
 
-describe(':: Button Component ::', () => {
-  it('applies correct default props', () => {
+describe(":: Button Component ::", () => {
+  it("applies correct default props", () => {
     const { getByTestId } = render(
       <Button>
         {({ getProps }) => (
@@ -15,12 +15,12 @@ describe(':: Button Component ::', () => {
           </button>
         )}
       </Button>
-    );
-    expect(getByTestId('my-button')).toHaveAttribute('role', 'button');
-    expect(getByTestId('my-button')).toHaveAttribute('type', 'button');
-  });
+    )
+    expect(getByTestId("my-button")).toHaveAttribute("role", "button")
+    expect(getByTestId("my-button")).toHaveAttribute("type", "button")
+  })
 
-  it('correctly overrides type prop', () => {
+  it("correctly overrides type prop", () => {
     const { getByTestId } = render(
       <Button type="submit">
         {({ getProps }) => (
@@ -29,8 +29,8 @@ describe(':: Button Component ::', () => {
           </button>
         )}
       </Button>
-    );
-    expect(getByTestId('my-button')).toHaveAttribute('role', 'button');
-    expect(getByTestId('my-button')).toHaveAttribute('type', 'submit');
-  });
-});
+    )
+    expect(getByTestId("my-button")).toHaveAttribute("role", "button")
+    expect(getByTestId("my-button")).toHaveAttribute("type", "submit")
+  })
+})

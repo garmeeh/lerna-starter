@@ -1,7 +1,7 @@
-import React from 'react';
-import styled from 'styled-components';
-import styledMap from 'styled-map';
-import Button from '@gmdev/button';
+import React from "react"
+import styled from "styled-components"
+import styledMap from "styled-map"
+import Button from "@gmdev/button"
 
 const StyledButton = styled.button`
   font-size: 16px;
@@ -43,9 +43,9 @@ const StyledButton = styled.button`
       default: #660198;
     `};
   }
-`;
+`
 
-const ExportableButton = ({ type = 'button', children, ...rest }) => (
+const ExportableButton = ({ type = "button", children, ...rest }) => (
   <Button type={type}>
     {({ getProps }) => (
       <StyledButton {...getProps()} {...rest}>
@@ -53,6 +53,6 @@ const ExportableButton = ({ type = 'button', children, ...rest }) => (
       </StyledButton>
     )}
   </Button>
-);
+)
 
-export default ExportableButton;
+export default ExportableButton
