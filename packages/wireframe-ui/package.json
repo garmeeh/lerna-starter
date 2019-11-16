@@ -10,9 +10,9 @@
     "@gmdev/counter": "^0.0.3"
   },
   "peerDependencies": {
-    "react": "^16.0.0",
-    "styled-components": "^4.1.1",
-    "styled-map": "^3.2.0-rc.1"
+    "react": "^16.8.6",
+    "styled-components": "^4.3.2",
+    "styled-map": "^3.3.0"
   },
   "publishConfig": {
     "access": "public"

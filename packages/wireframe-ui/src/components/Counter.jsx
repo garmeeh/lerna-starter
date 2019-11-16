@@ -1,13 +1,13 @@
-import React from 'react';
-import styled from 'styled-components';
-import Counter from '@gmdev/counter';
+import React from "react"
+import styled from "styled-components"
+import Counter from "@gmdev/counter"
 
-import { Button } from '../';
+import { Button } from "../"
 
 const CounterWrapper = styled.div`
   display: flex;
   align-items: center;
-`;
+`
 
 const Count = styled.div`
   color: #000000;
@@ -16,7 +16,7 @@ const Count = styled.div`
   padding: 0 4px;
   font-size: 24px;
   text-align: center;
-`;
+`
 
 const ExportableCounter = props => (
   <Counter {...props}>
@@ -28,6 +28,6 @@ const ExportableCounter = props => (
       </CounterWrapper>
     )}
   </Counter>
-);
+)
 
-export default ExportableCounter;
+export default ExportableCounter

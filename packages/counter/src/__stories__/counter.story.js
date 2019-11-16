@@ -1,11 +1,11 @@
-import React from 'react';
-import { storiesOf } from '@storybook/react';
+import React from "react"
+import { storiesOf } from "@storybook/react"
 
-import Counter from '../';
+import Counter from ".."
 
-const stories = storiesOf('Counter', module);
+const stories = storiesOf("Counter", module)
 
-stories.add('Counter', () => (
+stories.add("Counter", () => (
   <Counter>
     {({ increase, decrease, count }) => (
       <div>
@@ -15,4 +15,4 @@ stories.add('Counter', () => (
       </div>
     )}
   </Counter>
-));
+))
